@@ -1,0 +1,565 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Naven || Personal Portfolio / CV / Resume Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+    .added1 {	background-color: #336600;
+	color: #FFFFFF;
+}
+    </style>
+ 
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Naven&rdquo; Documentation by &ldquo;DynamicLayers&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Naven&rdquo;</h1>
+		
+        <div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+			  <p class="prepend-top">
+<strong>
+					Created:08/01/2020<br>
+				By: <a href="http://www.DynamicLayers.com">DynamicLayers</a><br>
+				<br>
+			    </strong><strong><br>
+		        </strong></p>
+    </div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please contact our support. Thanks so much!</p>
+	</div>
+	  </div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#temp-components">Template Components</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>Below is the general HTML structure of the landing page.<br>
+		</p>              
+
+	  <h4 id="front-html-structures"><strong>1) index.html File Structure</strong> - <a href="#toc">top</a></h4>
+	  
+      <p>The template page's layout consist of top that show the logo and main menu, hero section  that show background image, beforecontent that show some amaizing content,  about section contain about your some info & feature, service section contained all services, work section you can showcase your portfolio with awesome animation, skills section here you can add some skills, team section is for your team members, testimonial section here you can published your customer reviews, call to action this for call to action content, contact section here you can put your contact information & footer that show copyright information.</p>
+        
+<pre class="brush: html;" id="front-html-structure-pre">
+
+&lt;!DOCTYPE html>
+&lt;!--[if lt IE 7]>      &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> &lt;![endif]-->
+&lt;!--[if IE 7]>         &lt;html class="no-js lt-ie9 lt-ie8" lang=""> &lt;![endif]-->
+&lt;!--[if IE 8]>         &lt;html class="no-js lt-ie9" lang=""> &lt;![endif]-->
+&lt;!--[if gt IE 8]>&lt;!--> &lt;html class="no-js" lang="en"> &lt;!--&lt;![endif]-->
+    &lt;head>
+       
+        &lt;meta charset="utf-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+		&lt;meta name="description" content="Personal Portfolio / CV / Resume Template">
+        &lt;meta name="author" content="DynamicLayers">
+        
+        &lt;title>Naven | Personal Portfolio / CV / Resume Template&lt;/title>
+        
+        &lt;link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+        
+        &lt;link rel="stylesheet" href="css/bootstrap.min.css" />
+        &lt;link rel="stylesheet" href="css/bootstrap-menu.css"/>
+        &lt;link rel="stylesheet" href="css/animate.min.css" />
+        &lt;link rel="stylesheet" href="css/themify-icons.css">
+        &lt;link rel="stylesheet" href="css/elegant-line-icons.css">
+        &lt;link rel="stylesheet" href="css/venobox/venobox.css"/>
+        &lt;link rel="stylesheet" href="css/owl.carousel.css"/>
+        &lt;link rel="stylesheet" href="css/owl.theme.default.min.css"/>
+        &lt;link rel="stylesheet" href="css/main.css"/>
+    &lt;/head>
+    &lt;body>
+        
+        &lt;div class="site-preloader-wrap">
+            &lt;div class="spinner">&lt;/div>
+        &lt;/div>&lt;!-- Preloader -->
+
+        &lt;div class="dl-fixed-sidebar dl-sidebar-left">
+            
+        &lt;/div>&lt;!-- Sidebar -->
+
+        &lt;div class="dl-side-content">
+            &lt;div class="content-lines-wrapper">
+                
+            &lt;/div>&lt;!-- Lines -->
+            
+            &lt;header class="hero-section d-flex align-items-center bd-bottom" data-scroll-index="0">
+                
+            &lt;/header>&lt;!-- Hero Section -->
+            
+            &lt;section id="about" class="about-section section-padding bd-bottom" data-scroll-index="1">
+                
+            &lt;/section>&lt;!-- About Section -->
+            
+            &lt;section id="resume" class="resume-section section-padding bd-bottom" data-scroll-index="2">
+                
+            &lt;/section>&lt;!-- Resume Section -->
+            
+            &lt;section id="services" class="services-section section-padding bd-bottom" data-scroll-index="3">
+                
+            &lt;/section>&lt;!-- Services Section -->
+            
+            &lt;section id="portfolios" class="portfolio-section section-padding bd-bottom" data-scroll-index="4">
+                
+            &lt;/section>&lt;!--Portfolio Section -->
+            
+            &lt;section id="reviews" class="testimonial-section section-padding bd-bottom" data-scroll-index="5">
+                
+            &lt;/section>&lt;!-- Testimonial Section-->
+            
+            &lt;section class="cta-section section-padding bd-bottom">
+                
+            &lt;/section>&lt;!-- CTA Section -->
+            
+            &lt;section id="contact" class="contact-section section-padding" data-scroll-index="6">
+                
+            &lt;/section>&lt;!-- Contact Section-->
+            
+            &lt;footer class="footer-section">
+                
+            &lt;/footer>&lt;!-- Footer Section -->
+            
+        &lt;/div>
+
+        &lt;!-- jQuery -->
+        &lt;script src="js/vendor/jquery-1.12.4.min.js">&lt;/script>
+        &lt;!--&lt;script src="js/vendor/jquery-migrate-3.0.0.min.js">&lt;/script>-->
+        &lt;script src="js/vendor/popper.min.js">&lt;/script>
+        &lt;script src="js/vendor/bootstrap.min.js">&lt;/script>
+        &lt;script src="js/vendor/scrollit.js">&lt;/script>
+        &lt;script src="js/vendor/jquery.waypoints.min.js">&lt;/script>
+        &lt;script src="js/vendor/imagesloaded.pkgd.min.js">&lt;/script>
+        &lt;script src="js/vendor/venobox.min.js">&lt;/script>
+        &lt;script src="js/vendor/jquery.isotope.v3.0.2.js">&lt;/script>
+        &lt;script src="js/vendor/owl.carousel.min.js">&lt;/script>
+        &lt;script src="js/vendor/typed.min.js">&lt;/script>
+        &lt;script src="js/vendor/bootstrap-menu.js">&lt;/script>
+        &lt;script src="js/vendor/wow.min.js">&lt;/script>
+        &lt;script src="js/main.js">&lt;/script>
+
+    &lt;/body>
+
+&lt;/html>
+        </pre>
+       <hr>
+		
+
+		<h3 id="temp-components"><strong>B) Template Components</strong> - <a href="#toc">top</a></h3>
+		<p>The site is made of many sections like header, slider, testimonials, services and more...</p>
+
+<h4 id="slider"><strong>1) Header Section</strong> - <a href="#toc">top</a></h4>
+
+
+<pre class="brush: html;">
+&lt;div class="dl-fixed-sidebar dl-sidebar-left">
+	&lt;div class="dl-header-container">
+		&lt;div class="logo">
+			&lt;h1>&lt;a href="index.html">&lt;img src="img/logo-light.png" alt="logo">&lt;/a>&lt;/h1>
+		&lt;/div>
+		&lt;div class="dl-burger-menu">
+			&lt;div class="dl-line-menu dl-line-half dl-first-line">&lt;/div>
+			&lt;div class="dl-line-menu">&lt;/div>
+			&lt;div class="dl-line-menu dl-line-half dl-last-line">&lt;/div>
+		&lt;/div>
+		&lt;nav class="dl-menu-fixed">
+			&lt;ul>
+				&lt;li>&lt;a href="index.html#home" data-scroll-nav="0">Home&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="index.html#services" data-scroll-nav="1">About Me&lt;/a>&lt;/li>
+			&lt;/ul>
+		&lt;/nav>
+		&lt;div class="dl-menu-social-media">
+		   
+			&lt;div class="dl-menu-copyright">
+				
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>&lt;!-- Sidebar -->
+</pre>
+        
+        
+	  <hr>
+<h4 id="portfolio"><strong>2) Hero Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;header class="hero-section d-flex align-items-center bd-bottom" data-scroll-index="0">
+	&lt;div class="container">
+		&lt;div class="hero-content text-center">
+			&lt;h4>Hello! I'M&lt;/h4>
+			&lt;h1>Jacob Harrison&lt;/h1>
+			&lt;h2>I'm &lt;span class="typed">&lt;/span>&lt;/h2>
+		&lt;/div>
+		&lt;ul class="hero-social">
+			&lt;li>&lt;a href="#">&lt;i class="ti-facebook">&lt;/i>&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/header>&lt;!-- Hero Section -->
+</pre>
+
+<hr>
+
+<h4 id="portfolio"><strong>3) About Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="about" class="about-section section-padding bd-bottom" data-scroll-index="1">
+	&lt;div class="container">
+		&lt;div class="row align-items-center">
+			&lt;div class="col-md-7 sm-padding wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+				&lt;div class="about-content">
+				   &lt;h2>Let Me Introduce Myself.&lt;/h2>
+					&lt;p>I love to work in User Experience & User Interface designing. Because I love to solve the design problem and find easy and better solutions to solve it. I always try my best to make good user interface with the best user experience.&lt;/p>
+					&lt;ul class="profile-info">
+						&lt;li>&lt;span>Full Name&lt;/span> Jacob Harrison&lt;/li>
+					&lt;/ul>
+					&lt;a href="#" class="default-btn">Download CV &lt;i class="ti-download">&lt;/i>&lt;/a>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-md-5 sm-padding wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
+				&lt;div class="about-bg">
+				   &lt;img src="img/about-bg.jpg" alt="img">
+				   &lt;div class="dots">&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- About Section -->
+</pre>
+
+<br>
+
+<hr>
+
+<h4 id="portfolio"><strong>4) resume Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="resume" class="resume-section section-padding bd-bottom" data-scroll-index="2">
+	&lt;div class="container">
+		&lt;div class="row">
+			&lt;div class="col-md-6 sm-padding wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+				&lt;div class="section-heading mb-40">
+				   &lt;h2>Working Experience&lt;/h2>
+				&lt;/div>
+				&lt;ul class="exp-list">
+					&lt;li>
+						&lt;div class="exp-date">
+							&lt;i class="ti-bookmark">&lt;/i>
+							&lt;span>January 2014 - Till Now&lt;/span>
+						&lt;/div>
+						&lt;div class="exp-content">
+							&lt;h4>Envato Inc. &lt;span>Software Engineer&lt;/span>&lt;/h4>
+							&lt;p>I love to work in User Experience & User Interface designing. Because I love to solve the design problem and find easy and better solutions to solve it.&lt;/p>
+						&lt;/div>
+					&lt;/li>
+					&lt;li>
+						&lt;div class="exp-date">
+							&lt;i class="ti-bookmark">&lt;/i>
+							&lt;span>February 2015 - March 2016&lt;/span>
+						&lt;/div>
+						&lt;div class="exp-content">
+							&lt;h4>Envato Inc. &lt;span>Web Designer&lt;/span>&lt;/h4>
+							&lt;p>I love to work in User Experience & User Interface designing. Because I love to solve the design problem and find easy and better solutions to solve it.&lt;/p>
+						&lt;/div>
+					&lt;/li>
+				&lt;/ul>
+			&lt;/div>
+			&lt;div class="col-md-6 sm-padding wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
+				&lt;div class="skill-wrap">
+				   &lt;div class="section-heading mb-40">
+					   &lt;h2>Professional Skills&lt;/h2>
+				   &lt;/div>
+					&lt;ul class="skill-items">
+						&lt;li class="skill-item">
+							&lt;h5>Photoshop&lt;/h5>
+							&lt;div class="progress">
+								&lt;div class="progress-bar wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 80%;">
+								&lt;span>80%&lt;/span>
+								&lt;/div>
+							&lt;/div>
+						&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- Resume Section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>5) Service Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="services" class="services-section section-padding bd-bottom" data-scroll-index="3">
+	&lt;div class="container">
+		&lt;div class="section-heading mb-40 text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+			&lt;h2>Outstanding Services&lt;/h2>
+		&lt;/div>
+		&lt;div class="row">
+			&lt;div class="col-md-4 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+				&lt;div class="services-item">
+					&lt;i class="icon-genius">&lt;/i>
+					&lt;h3>Web Development&lt;/h3>
+					&lt;p>Uniquely incentivize systems for reliable market. Authoritatively scale next generation. &lt;/p>
+					&lt;div class="dots">&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- Services Section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>6) Portfolio Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="portfolios" class="portfolio-section section-padding bd-bottom" data-scroll-index="4">
+	&lt;div class="container">
+	   &lt;div class="section-heading text-center mb-40 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+		   &lt;h2>Work Portfolios&lt;/h2>
+	   &lt;/div>
+		&lt;div class="portfolio-wrapper">
+			&lt;ul class="portfolio-filter text-center mb-30">
+				&lt;li class="active" data-filter="*">All&lt;/li>
+			&lt;/ul>&lt;!-- Portfolio Filter -->
+			&lt;div class="row portfolio-items">
+				&lt;div class="col-md-4 col-sm-6 padding-10 single-item design wordpress">
+				   &lt;div class="portfolio-box">
+					   &lt;img src="img/port-1.jpg" alt="img">
+					   &lt;div class="portfolio-content">
+						   &lt;h3>&lt;a class="img-popup" href="img/port-1.jpg">Design Studio&lt;span>Branding&lt;/span>&lt;/a>&lt;/h3>
+					   &lt;/div>
+				   &lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!--Portfolio Section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>7) testimonial Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="reviews" class="testimonial-section section-padding bd-bottom" data-scroll-index="5">
+	&lt;div class="container">
+		&lt;div class="section-heading mb-40 text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+			&lt;h2>Clients Reviews&lt;/h2>
+		&lt;/div>
+		&lt;div id="testimonial-carousel" class="testimonial-carousel owl-carousel">
+			&lt;div class="testimonial-item">
+				&lt;div class="testimonial-innter">
+					&lt;div class="testi-thumb">&lt;img src="img/testi-1.jpg" alt="img">&lt;/div>
+					&lt;div class="testi-content">
+						&lt;p>"This has been one of the best Customer Support experiences I have ever had. The design of the theme also, AMAZING! Thank you so much for all your help DynamicLayers!"&lt;/p>
+						&lt;h4>Kyle Frederick &lt;span>Envato.INC&lt;/span>&lt;/h4>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- Testimonial Section-->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>8) Cta Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="cta-section section-padding bd-bottom">
+	&lt;div class="container">
+		&lt;div class="row">
+			&lt;div class="col-md-6 xs-padding">
+				&lt;div class="cta-content">
+					&lt;h3>Need a Consultant for Your Business?&lt;/h3>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-md-6 xs-padding text-right">
+				&lt;a href="#" class="default-btn">Hire Me Now!&lt;/a>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- CTA Section -->
+</pre>
+
+<hr />
+
+
+<h4 id="portfolio"><strong>9) Contact Section </strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="contact" class="contact-section section-padding" data-scroll-index="6">
+	&lt;div class="container">
+		&lt;div class="section-heading mb-40 text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+			&lt;h2>Get In Touch&lt;/h2>
+		&lt;/div>
+		&lt;div class="row">
+			&lt;div class="col-md-8 offset-md-2">
+				&lt;form class="row contact-form text-center">
+					&lt;div class="form-group col-lg-6">
+						&lt;input type="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Your name">
+					&lt;/div>
+					&lt;div class="form-group col-lg-6">
+						&lt;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					&lt;/div>
+					&lt;div class="form-group col-lg-12">
+						&lt;textarea class="form-control message" id="message" placeholder="Message">&lt;/textarea>
+					&lt;/div>
+					&lt;div class="form-group col-lg-12">
+						&lt;a href="#" class="default-btn">Send Message&lt;/a>
+					&lt;/div>
+				&lt;/form>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- Contact Section-->
+</pre>
+
+<hr />
+
+<h4 id="portfolio"><strong>10) Footer Section </strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;footer class="footer-section">
+	&lt;div class="container">
+		&lt;div class="row">
+			&lt;div class="col-md-6">
+				&lt;p>© &lt;script> document.write(new Date().getFullYear())&lt;/script> Naven by &lt;a href="#">DynamicLayers&lt;/a>&lt;/p>
+			&lt;/div>
+			&lt;div class="col-md-6">
+				&lt;div class="footer-social text-right">
+					&lt;a href="#">&lt;i class="ti-facebook">&lt;/i>&lt;/a>
+				&lt;/div>&lt;!-- Social -->
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/footer>&lt;!-- Footer Section -->
+</pre>
+<h4 id="portfolio"><strong>12) Footer Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;footer class="footer-section align-center">
+	&lt;div class="container">
+		&lt;p>&copy; 2019 Naven Powered by DynamicLayers&lt;/p>
+	&lt;/div>
+&lt;/footer>&lt;!-- /.footer-section -->
+</pre>
+
+<hr />
+
+  <br>
+
+<p>&nbsp;</p>
+
+	  <hr>
+		<h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		 <p>These are the css files:</p>
+		<ol>
+			<li>bootstrap.min.css</li> 
+			<li>animate.min.css</li> 
+			<li>elegant-font-icons.css</li> 
+			<li>elegant-line-icons.css</li> 
+			<li>owl.carousel.css</li> 
+			<li>main.css </li>
+	        <li>responsive.css</li>
+	  </ol>
+
+	  
+<p>&nbsp;</p>
+	  <hr>
+		
+		<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme use these Javascript files:</p>
+		
+		<ol>
+		  <li>jQuery<br>
+		    jQuery is a Javascript library that greatly reduces the amount of code that you must write. jQuery use these javascript files:
+		    <pre>
+            	bootstrap.min.js
+                smooth-scroll.min.js
+                owl.carousel.min.js
+                jquery-1.12.4.min.js
+                owl.carousel.min.js
+                venobox.min.js
+                wow.min.js
+                jquery.counterup.min.js
+                main.js
+            </pre>
+		    You can edit the contact.js files. for setting contact form
+		    <br>
+            <br>
+		  </li>
+	  </ol>
+		
+<hr>
+		
+		<h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		<ol>
+			<li><a href="http://getbootstrap.com" target="_blank">Bootstrap 4</a></li>
+			<li><a href="http://www.owlcarousel.owlgraphic.com" target="_blank">OWL Carousel</a></li>
+			<li><a href="https://wowjs.uk/" target="_blank">WOW JS</a></li>
+			<li><a href="http://veno.es/venobox/" target="_blank">VenoBox</a></li>
+		</ol>
+	    <p>
+      
+    <hr>
+        <h3 id="php"><strong>G) PHP Code Explanation </strong> - <a href="#toc">top</a></h3>
+        <p>There are only one php code for contact page which is contact.php, open this file and change the email and subject on line 24 and line 27.
+         No need to edit other code unless you really want to.
+  <hr>
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p> 
+		
+	  <p class="append-bottom alt large"><strong>DynamicLayers</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div>
+<!-- end div .container -->
+	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+	<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
+</body>
+</html>
