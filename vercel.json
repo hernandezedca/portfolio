@@ -1,0 +1,12 @@
+{
+  "routes" : [
+    {
+      "src": "/",
+      "dest": "/"
+    }, 
+    {
+      "src": "light/index.html",
+      "dest": "/"
+    }
+  ]
+}
